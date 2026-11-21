@@ -1,10 +1,9 @@
-
 <!doctype html>
 <html lang="kaa">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Kelajak soatları — BMAR viktorinası</title>
+<title>4-shınıǵıw — Klas ámeliyatın izertlew viktorinası</title>
 <style>
 *{box-sizing:border-box}
 body{margin:0;background:#f2f6fc;color:#172033;font:16px Arial,sans-serif}
@@ -46,7 +45,7 @@ body{margin:0;background:#f2f6fc;color:#172033;font:16px Arial,sans-serif}
 <body>
 <div class="wrap">
 <header class="head">
-<div><h1>Kelajak soatları</h1><div class="muted">BMAR modeli boyınsha viktorina</div></div>
+<div><h1>4-shınıǵıw: Klas ámeliyatın izertlew</h1><div class="muted">Texnologiya páni jetekshi oqıtıwshıları ushın seminar viktorinası</div></div>
 </header>
 <div class="layout">
 <main class="card">
@@ -55,7 +54,7 @@ body{margin:0;background:#f2f6fc;color:#172033;font:16px Arial,sans-serif}
 <h2>Atıńızdı kiritiń</h2>
 <p class="muted">12 soraw. Hár durıs juwap — 1 ball. Reyting barlıq qatnasıwshılar ushın real waqıtta jańalanadı.</p>
 <label for="name">Jetekshi oqıtıwshınıń atı-jóni</label>
-<input id="name" class="field" maxlength="50" placeholder="Mısalı: Aygúl Qurbanova">
+<input id="name" class="field" maxlength="50" placeholder="Mısalı: Zamira Baubekova">
 <button class="btn" id="startBtn">Baslaw →</button>
 <div id="joinStatus" class="status"></div>
 <div id="connection" class="connection">Firebase bazasına jalǵanıw tekserilmekte...</div>
@@ -103,18 +102,18 @@ const firebaseConfig = {
 };
 
 const questions = [
-["Muǵallim watanǵa xızmet etken insan haqqında video kórsetip, onıń is-háreketindegi qádiriyatlardı talqılattı. Qaysı BMAR basqıshı kóbirek kórinedi?",["Bilim — jańa maǵlıwmat alıw","Munasabat — qádiriyat hám kózqarastı talqılaw","Ámel — video kórsetiw","Refleksiya — sabaqta video bolıwı"],1,"Tiykarǵı maqset maǵlıwmat alıw emes, qádiriyatqa qatnastı talqılaw."],
-["Oqıwshılar ekologiya faktlerin biledi, biraq mektepte shıǵındını azaytıwǵa qatnaspaydı. Keyingi sabaqta qaysı tapsırma maqul?",["Taǵı faktlerdi kóshirip jazıw","Terminlerdi yadlaw testi","Shıǵındını azaytıw rejesin dúzip, bir ámeliy qádemdi orınlaw","Faktlerdi qayta oqıw"],2,"Bilim bar, biraq ámel jetispeydi."],
-["Oqıwshılar «Búgin ne úyrendińiz?» sorawına tek tema atın ayttı. Refleksiyanı qalay tereńlestiriwge boladı?",["Eń uzın sózdi soraw","Qaysı pikir kózqarasıńızǵa tásir etti hám ne sebepten dep soraw","Kim birinshi juwap bergenin soraw","Slayd sanın soraw"],1,"Bul soraw úyreniwge hám kózqaras ózgerisine qayta qarawǵa járdem beredi."],
-["Toparda bir oqıwshı barlıq waqıtta sóyleydi. «Dunyo kafesi» usılında qatnasıwdı teńlestiriw ushın ne islew kerek?",["Eń belsendi oqıwshıǵa juwmaqlawdı tapsırıw","Hár bir qatnasıwshıǵa ideya jazıw hám qosıw múmkinshiligin beriw","Belsendi oqıwshını basqa toparǵa ótkeriw","Talqılawdı toqtatıp, juwaptı aytıw"],1,"Strukturalı qatnasıw hár bir adamǵa ideya qosıwǵa múmkinshilik beredi."],
-["«Kubik oyını»nda oqıwshılar bir sóz benen juwap berip, talqılawdı tez tamamladı. Muǵallim ne islewi kerek?",["Tek bir sózli juwaptı aldın ala beriw","Juwaptı dálil, mısal yamasa qarsı pikir menen tiykarlandırıwdı soraw","Kubikti tek tez oqıwshıǵa beriw","Jazba testke almastırıw"],1,"Dálil hám mısal pikirlewdi tereńlestiredi."],
-["«Oqıwshılar doslıq haqqında túsinik aladı» degen maqsetti qalay baqlanatuǵın etiwge boladı?",["Doslıq haqqında kóp nárse biliw","Eki jaǵdaydı salıstırıp, qollap-quwatlaw háreketin tiykarlandırıw","Sabaqtı jaqsı kóriw","Prezentaciya kórsetiw"],1,"Baqlanatuǵın maqset oqıwshınıń anıq háreketin kórsetedi."],
-["Muǵallim qádiriyat haqqında talqılaw ótkizdi, biraq oqıwshılar onı qollanıp kóretuǵın tapsırma joq. Qaysı basqısh jetispeydi?",["Bilim basqıshında slayd","Munasabat basqıshında pikir almasıw","Ámel basqıshında turmıslıq jaǵdayda qollanıw","Refleksiyada sabaq atı"],2,"Qádiriyat haqqında talqılawdan keyin onı ámelde qollanıw kerek."],
-["«3–2–1» refleksiyasında oqıwshılar jańa bilim, paydalı ideya hám bir qádem jazdı. Muǵallim bunı qalay paydalanıwı kerek?",["Tek jazılǵan tekstlerdi sanaw","Keyingi sabaqtı rejelestiriw hám qollaw kerek bolǵan jerlerdi anıqlaw","Tek baha qoyıw","Juwaplardı oqımay jıynaw"],1,"Refleksiya keri baylanıs hám sabaqtı jaqsılaw ushın qollanıladı."],
-["Topardıń jobasında bilim hám video bar, biraq ámeliy tapsırma men refleksiya anıq emes. Eń sapalı keri baylanıs qaysı?",["Slaydlar kóp ekenin maqtaw","Tórt basqısh atların jazıw","Qádiriyattı qollanıw tapsırması hám refleksiya sorawların anıq kórsetiw","Video ornına basqa video qoyıw"],2,"Keri baylanıs jobanı BMAR basqıshları boyınsha tolıqtırıwǵa járdem beredi."],
-["Oqıwshılar durıs juwap berdi, biraq óz pikirin dálilliy almadı. Muǵallim qaysı usıldı qosıwı kerek?",["Tek qosımsha faktler beriw","Pikirlerdi salıstırıp, «Ne sebepten?» dep dálil soraw","Tek qol kóteriwdi talap etiw","Refleksiyanı alıp taslaw"],1,"Dálil menen talqılaw óz kózqarasın túsindiriwge járdem beredi."],
-["BMAR boyınsha qaysı izbe-izlik eń maqul?",["Maǵlıwmat → munasabat haqqında pikirlesiw → ámelde qollanıw → refleksiya","Video → test → uy tapsırması → baha","Pikirlesiw → tema atı → prezentaciya → tamamlaw","Refleksiya → ámel → bilim → munasabat"],0,"Izbe-izlik bilimnen munasabatqa, ámelge hám refleksiyaǵa ótedi."],
-["Sabaqta oqıwshılar qádiriyat haqqında pikir bildirdi, biraq turmıslıq jaǵdayda sheshim usınbadı. Keyingi tapsırma qaysı bolıwı kerek?",["Temaǵa baylanıslı qosımsha terminlerdi yadlaw","Real jaǵdaydı berip, qádiriyatqa sáykes sheshim usınıw hám tiykarlandırıw","Prezentaciyanı qayta kóriw","Tek sabaq atın jazıw"],1,"Bul munasabat basqıshın ámeliy qollanıw menen baylanıstıradı."]
+["Texnologiya sabaǵında oqıwshılar ámeliy jumısqa belsene qatnaspay atır. Izleniwge baǵdarlanǵan ámeliy izertlew boyınsha muǵallim dáslep ne islewi kerek?",["Dárhal jańa metod qollanıp, sabaq formasın ózgertiw","Aldın mashqalanıń sebebin anıqlaw ushın maǵlıwmat toplap úyreniw","Oqıwshılarǵa qosımsha úy tapsırması beriw","Belsendi emes oqıwshılardı basqa toparǵa ótkeriw"],1,"Bul metodikada dáslep ózgeris kirgizbesten aldın házirgi jaǵdaydı dáliller menen úyreniw kerek."],
+["Izertlew temasın tańlawda qollanılatuǵın MUSE ólshemindegi «M» (Manageable) háripi neni ańlatadı?",["Tema tek teoriyalıq jaqtan qızıqlı bolıwı kerek","Bul jaǵday real hám muǵallim onı shınında da izertley alıwı múmkin","Tek úlken mektep kólemindegi mashqala bolıwı kerek","Mektep basshılıǵı tárepinen berilgen tapsırma bolıwı kerek"],1,"M — erisiw múmkin bolǵan: jaǵdaydıń real hám ámelde izertlewge múmkin bolıwı."],
+["SMART izertlew sorawın dúziwde «S» (Study-focused — úyreniwge baǵdarlanǵan) talabı neni bildiredi?",["Keleshektegi ózgeristi sınap kóriwdi soraw","Házirgi bar jaǵdaydı hám onıń sebeplerin úyreniwge baǵdarlaw","Tek oqıwshılardıń jıllıq bahaların esaplaw","Sabaqtıń tek kirisiw bólimin ólshew"],1,"Izleniw basqıshında soraw keleshektegi háreketke emes, házirgi jaǵdaydı túsinip alıwǵa qaratıladı."],
+["Tómendegi sorawlardıń qaysısı SMART ólshemine sáykes keletuǵın durıs «izleniw sorawı» esaplanadı?",["«Toparlıq jumıstı ózgertsem oqıwshılar jaqsıraq isleydi me?»","«Házirgi Texnologiya sabaqlarımda toparlıq jumıs waqtında oqıwshılar ne isleydi hám nege qıynaladı?»","«Nege hámme oqıwshılar sabaqtı jaqsı kórmeydi?»","«Kelesi sherekte qanday jańa qural satıp alıw kerek?»"],1,"Bul soraw házirgi jaǵdaydı anıq, ólshenetuǵın hám temaǵa baǵdarlanǵan túrde úyrenedi."],
+["Maǵlıwmat toplawda «triangulyaciya» degende ne túsiniledi?",["Úsh ret qayta test ótkeriw","Bir máseleni úyreniw ushın úsh túrli maǵlıwmat dereginen paydalanıp salıstırıw","Klastı úsh toparǵa bólip oqıtıw","Üsh muǵallimniń bir sabaqtı ótiwi"],1,"Bir derektiń ornına úsh túrli derek (óz baqlawı, oqıwshı pikiri, kásiples pikiri) isenimli nátiyje beredi."],
+["Texnologiya muǵallimi 28 oqıwshıdan sorawnama alıp, «18 oqıwshı sızılma sızıwda qıynaladı, 10 oqıwshı qıynalmaydı» degen nátiyje shıǵardı. Bul qanday maǵlıwmat túri?",["Sapalıq (pikirler) maǵlıwmat","Muǵdarlıq (sanlı) maǵlıwmat","Teoriyalıq maǵlıwmat","Boljaw maǵlıwmatı"],1,"Sanlar, procentler hám esaplawǵa bolatuǵın kórsetkishler muǵdarlıq maǵlıwmatqa kiredi."],
+["Oqıwshılardıń jazba pikir-mulohazaların oqıp, olardan gilt sózler hám tiykarǵı kategoriyalardı ajıratıp alıw qaysı maǵlıwmat túrin tallawǵa kiredi?",["Muǵdarlıq (sanlı) maǵlıwmat","Sapalıq (pikirler) maǵlıwmat","Statistikalıq kesteler","Texnikalıq ólshemler"],1,"Oqıwshılardıń sózleri, pikirleri hám baqlaw sıpatlamaları sapalıq maǵlıwmat bolıp esaplanadı."],
+["Tapqan nátiyjelerdi túsindiriw (talqılaw) basqıshında muǵallim ózine qaysı sorawdı beriwi kerek?",["«Bul nátiyjeler meniń izertlew sorawlarım haqqında maǵan ne deydi?»","«Qansha waqıtta barlıq oqıwshılarǵa bes baha qoyıw múmkin?»","«Qaysı slayd reńi shıraylıraq?»","«Bul jumıstı kimge tapsırıp qoysam boladı?»"],0,"Nátiyjelerdi izertlew sorawları hám basqa derekler menen baylanıstırıp túsindiriw zárúr."],
+["Izleniwge baǵdarlanǵan izertlewdiń úsh basqıshınıń durıs izbe-izligi qaysı?",["Háreket → Baqlaw → Pikirlew","Izleniwdi rejelestiriw → Izleniw (úyreniw) → Tallaw hám pikir júrgiziw","Test ótkeriw → Baha qoyıw → Esabat jazıw","Plakat jasaw → Galereya sayaxatı → Juwmaqlaw"],1,"1-bólim rejelestiriw, maǵlıwmat toplaw (úyreniw) hám tallaw-pikirlewden turadı."],
+["2-bólim — Ámeliy izertlewdiń (Action) tiykarǵı sorawı ne?",["«Házirgi waqıttaǵı jaǵday qanday?»","«Siz islegen ózgeris(ler)diń nátiyjesi qanday?»","«Sabaqlıqta neshe tema bar?»","«Oqıwshılar neshe jasta?»"],1,"Ámeliy izertlew kirgizilgen ózgeristiń nátiyjesi hám tásirin tekseriwge qaratılǵan."],
+["Ámeliy izertlew basqıshında ózgeristiń nátiyjesin ádil salıstırıw ushın qaysı kásiplik másláhátke ámel etiw kerek?",["Burınǵı maǵlıwmatlardı tolıq óshirip taslaw","Izleniw basqıshında qollanılǵan keminde bir tap sonday maǵlıwmat toplaw usılınan qayta paydalanıw","Tek óz sezimine súyenip juwmaq shıǵarıw","Hár háptede pútkilley basqa sorawnama ótkeriw"],1,"Baslanǵısh hám juwmaqlawshı jaǵdaydı salıstırıw ushın uqsas usıl qollanıw zárúr."],
+["«Míymanxanashı (mezban) menen galereya sayaxatı» shınıǵıwında basqa toparlar plakatqa qanday pikir-mulohaza beriwi kerek?",["Tek plakat reńin hám xatın maqtaw","Jumıs/háreket nátiyjelerge hám izleniw sorawlarına sáykes kele me — sonı tekserip usınıs beriw","Plakattıń ólshemin ólshew","Basqa toparlardıń qátelerin sanaw"],1,"Konstruktiv keri baylanıs háreketlerdiń maqsetke hám dálillerge sáykesligin jaqsılawǵa járdem beredi."]
 ];
 
 const $ = id => document.getElementById(id);
@@ -145,7 +144,7 @@ function draw(){
     b.onclick=()=>answer(i);$("answers").append(b);
   });
   $("next").disabled=!locked;$("next").textContent=idx===11?"Nátiyjeni kóriw →":"Keyingi →";
-  $("answerStatus").textContent=locked?(answers[idx]===q[2]?"Durıs! +1 ball.":"Durıs juwap: "+q[1][q[2]]):"Bir juwap tańlań.";
+  $("answerStatus").textContent=locked?(answers[idx]===q[2]?"Durıs! +1 ball. "+q[3]:"Durıs juwap: "+q[1][q[2]]+" — "+q[3]):"Bir juwap tańlań.";
 }
 function answer(i){if(locked)return;locked=true;answers[idx]=i;if(i===questions[idx][2])score++;draw()}
 
@@ -160,7 +159,7 @@ $("next").onclick=async()=>{
   try{
     await resultsRef.push({name:name.slice(0,50),score:score,when:Date.now()});
     $("doneName").textContent=name+" — nátiyje";$("final").textContent=score;
-    $("message").textContent=score>=10?"Ájayıp nátiyje!":score>=7?"Jaqsı nátiyje!":"BMAR materialın qayta kórip shıǵıń.";
+    $("message").textContent=score>=10?"Ájayıp nátiyje!":score>=7?"Jaqsı nátiyje!":"4-shınıǵıw materialın qayta kórip shıǵıń.";
     show("done");
   }catch(e){$("answerStatus").textContent="Nátiyjeni saqlawda qátelik. Internet hám Firebase Rules-tı tekseriń.";console.error(e)}
 };
@@ -171,14 +170,15 @@ $("review").onclick=()=>{
     const d=document.createElement("div");d.className="review-item";
     const st=document.createElement("strong");st.textContent=(i+1)+". "+q[0];
     const p=document.createElement("p");p.textContent="Durıs juwap: "+q[1][q[2]];
-    d.append(st,p);box.append(d);
+    const ex=document.createElement("p");ex.className="small";ex.textContent=q[3];
+    d.append(st,p,ex);box.append(d);
   });
 };
 
 try{
   firebase.initializeApp(firebaseConfig);
   db=firebase.database();
-  resultsRef=db.ref("kelajakBMAR/results");
+  resultsRef=db.ref("texnologiya4Shinigiw/results");
   resultsRef.on("value",snap=>renderLeaders(snap.val()),err=>{setConnection("Firebase qáteligi: "+err.message);console.error(err)});
   setConnection("Firebase bazasına jalǵandı. Reyting real waqıtta jańalanadı.");
 }catch(e){
